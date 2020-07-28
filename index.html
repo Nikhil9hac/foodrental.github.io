@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online meal</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    /* navigation-link */
+header{
+    width: 100%;
+    height: 320px;
+    background: url('image/bg-1.jpg') no-repeat center center/cover;
+    opacity: 0.89;
+}
+.logo img{
+    height: 79px;
+    margin-left: 21px;
+    margin-top: -6px;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 78px;
+    z-index: -1;
+    margin-bottom: 20px;
+    opacity: 0.58;
+    background: black;
+}
+.navi{
+    display: flex;
+    margin-top: -12px;
+}
+.navi li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+.navi li a{
+    text-decoration: none;
+    color: white;
+    padding: 3px 22px;
+    border-radius: 28px;
+}
+.navi li a:hover{
+    background-color: white;
+    color: black;
+}
+      /* header-middle */
+    
+.middle{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4%;
+    justify-content: center;
+}
+.btn{
+    background: transparent;
+    user-select: none;
+    border: 2px white solid;
+    border-radius: 28px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-right: 27px;
+}
+.btn a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+}
+
+    /* header_below */
+.primary{
+text-align: center;
+ font-size: 1.8rem;
+}
+main{
+    height: 264px;
+    margin-bottom: 60px;
+}
+.main2{
+    display: flex;
+    width: 100%;
+   justify-content: space-between;
+ 
+}
+.main2 div{
+    border: 2px rgb(240, 65, 65) solid;
+    padding: 7px;
+    border-radius: 42px;
+    text-align: center;
+    margin: 24px;
+    background-color: rgb(250, 210, 158);
+}
+.main2 div img{
+    height: 120px;
+}
+.main2 div h2{
+    padding-bottom: 10px;
+}
+
+      /* next-page */
+ section{
+        margin-top:100px;
+}
+section::before{
+    content: '';
+    background: url('image/bg-2.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 241px;
+    opacity: 0.6;
+}
+.secondary{
+    text-align: center;
+    margin-top: 6px;
+    font-size: 2rem;
+}
+.company{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin-top: 45px;
+    justify-content: center;
+    margin-right: 67px;
+
+}
+.company img{
+    z-index: 1;
+    height: 100px;
+}
+
+         /* footer */
+
+.third{
+   text-align: center;
+    margin-top: 10px;
+}
+.php{
+    width: 100%;
+    height: 330px;
+    margin-top: 10px;
+    /* padding: 2px; */
+}
+.php label{
+    margin-left: 30%;
+    font-weight: 800;
+    color: black;
+}
+.php input{
+    width: 45%;
+    padding: 3px;
+    border-radius: 8px;
+    outline: none;
+    border-color: wheat;
+    margin-left: 30%;
+}
+input[type=tel] {
+    padding: 20px;
+  }
+input[type=submit]{
+        width: 8%;
+        background-color: rgb(146, 223, 70);
+        padding: 8px;
+        color: white;
+        margin-top: 7px;
+        font-weight: bold;
+        font-size: 1rem;
+}
+input[type=reset]{
+    width: 8%;
+    background-color: rgb(146, 223, 70);
+    padding: 8px;
+    color: white;
+    margin-left: 9px;
+    margin-top: 7px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+ .btn2{
+    width: 33%;
+    border-radius: 0px;
+    /* font-size: 1.1rem; */
+    padding: 2px;
+    display: block;
+    border-radius: 8px;
+    background-color: red;
+    outline: 0;
+    margin-left: 474px;
+ }
+ .btn2 a{
+     text-decoration: none;
+     color: white;
+     font-size: 1rem;
+}
+footer::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 403px;
+    background: url('image/contact.jpeg') no-repeat center center/cover;
+    opacity: 0.6;
+    margin-top: -11px;
+    z-index: -1;
+}
+.last{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 6%;
+    height: 30px;
+}
+.last p{
+    margin-left: 91px;
+    padding-top: 7px;
+}
+
+@media only screen and (max-width: 1108px){
+    body{
+    width: 1200px;
+}
+header > .container::before{
+    width: 1200px;
+}
+body> section::before{
+    width: 1200px;
+}
+body> footer::before{
+    width: 1200px;
+}
+
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- navigation link -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="image/logo.png" alt="">
+            </div>
+            <nav>
+                <ul class="navi">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li> <a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- header-middle -->
+        <div class="middle">
+            <h1>Welcome to my website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iusto praesentium presentaion ad!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt?</p>
+            <div class="btn">
+                <a href="#"> Order now</a>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <!-- header-below -->
+    <h1 class="primary">Ours services</h1>
+    <main>
+        <div class="main2">
+            <div id="box-1">
+                <img src="image/catering.png" alt="">
+                <h2>Food Catering</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo rem fugiat temporibus aperiam.
+                    Corporis
+                    tempora nobis a obcaecati itaque accusantium odio cupiditate, corrupti veritatis. Vitae laboriosam
+                    ipsum
+                    dignissimos eveniet natus deleniti dolor!</p>
+            </div>
+            <div id="box-2">
+                <img src="image/burger.png" alt="">
+                <h2>Bulk Ordering</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo rem fugiat temporibus aperiam.
+                    Corporis
+                    tempora nobis a obcaecati itaque accusantium odio cupiditate, corrupti veritatis. Vitae laboriosam
+                    ipsum
+                    dignissimos eveniet natus deleniti dolor!</p>
+            </div>
+            <div id="box-3">
+                <img src="image/delivery.png" alt="">
+                <h2>food Ordering</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo rem fugiat temporibus aperiam.
+                    Corporis
+                    tempora nobis a obcaecati itaque accusantium odio cupiditate, corrupti veritatis. Vitae laboriosam
+                    ipsum
+                    dignissimos eveniet natus deleniti dolor!</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- next-page -->
+
+    <section>
+        <hr>
+        <h1 class="secondary">
+            Our clients
+        </h1>
+        <div class="company">
+            <img src="image/apple.png" alt="">
+            <img src="image/skype.png" alt="">
+            <img src="image/microsoft.png" alt="">
+            <img src="image/hp.png" alt="">
+            <img src="image/microsoft.png" alt="">
+            <img src="image/skype.png" alt="">
+        </div>
+    </section>
+    <hr>
+    <!-- footer -->
+
+    <footer>
+        <h1 class="third">
+            Contact us
+        </h1>
+        <div class="php">
+            <form action="backend.php">
+                <label for="text">Name:</label>
+                <div class="name">
+                    <input type="text" name="mytext" id="text" placeholder="Enter name">
+                </div>
+                <label for="email">Email:</label>
+                <div class="gmail">
+                    <input type="email" name="myemail" id="email" placeholder="Enter emil">
+                </div>
+                <label for="number">Phone Number:</label>
+                <div class="phone">
+                    <input type="number" name="mynumber" id="number" placeholder="Enter phone number">
+                </div>
+                <label for="message">Message:</label>
+                <div class="whatsapp">
+                    <input type="tel" name="mymessage" id="Message" placeholder="Enter Message">
+                </div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+            </button>
+            <div class="last">
+                <p>
+                    Copyright &copy; www.Onlinemeal.com All right reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
