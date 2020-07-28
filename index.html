@@ -31,7 +31,7 @@ header{
     content: '';
     position: absolute;
     width: 100%;
-    height: 78px;
+    height: 93px;
     z-index: -1;
     margin-bottom: 20px;
     opacity: 0.58;
@@ -96,12 +96,12 @@ main{
  
 }
 .main2 div{
-    border: 2px rgb(240, 65, 65) solid;
+    border: 2px rgb(226, 70, 70) solid;
     padding: 7px;
     border-radius: 42px;
     text-align: center;
     margin: 24px;
-    background-color: rgb(250, 210, 158);
+    background-color: rgb(226, 143, 48);
 }
 .main2 div img{
     height: 120px;
@@ -227,19 +227,23 @@ footer::before{
 }
 
 @media only screen and (max-width: 1108px){
-    body{
-    width: 1200px;
-}
-header > .container::before{
-    width: 1200px;
-}
-body> section::before{
-    width: 1200px;
-}
-body> footer::before{
-    width: 1200px;
-}
-
+    main{
+        height: 972px;
+    }
+    .main2{
+        flex-direction: column;
+    }
+    .company{
+        flex-wrap: wrap;
+        height: 231px;
+    }
+    body > section::before{
+    height: 326px;
+    }
+    .main2 div{
+        margin: 43px;
+        padding: 19px;
+    }
 }
 
     </style>
